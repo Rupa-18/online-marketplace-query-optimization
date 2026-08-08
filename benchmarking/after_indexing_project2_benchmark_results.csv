@@ -1,0 +1,9 @@
+Query Name,Baseline Avg (s),Baseline Std (s),Optimized Avg (s),Optimized Std (s)
+i want my most frequent customers,0.4859,0.0772,0.0003,0.0005
+most popular products/ most sold products,0.1835,0.0352,0.1571,0.0204
+highest spending customers,1.2684,0.1218,1.2707,0.1143
+customers placed the most orders in the last 6 months,0.3218,0.0379,0.1964,0.0227
+most frequently bought product pair,2.8916,0.2837,2.8762,0.151
+total sales per category,2.4278,0.27,0.968,0.1033
+total payment per customer,1.1617,0.1048,0.7222,0.1032
+

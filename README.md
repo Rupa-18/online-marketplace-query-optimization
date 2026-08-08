@@ -69,9 +69,9 @@ Each of the 7 queries was run 20 times (baseline and optimized), both before and
 - [`benchmarking/benchmarking-project2.ipynb`](benchmarking/benchmarking-project2.ipynb) collects average runtime and standard deviation per query.
 - [`benchmarking/statistical_analysis-project2.ipynb`](benchmarking/statistical_analysis-project2.ipynb) runs a paired t-test and computes the 95% confidence interval for the mean runtime difference (baseline − optimized).
 
-**Before indexing** (`benchmarking/project2_stats_results.csv`), 6 of 7 queries showed a statistically significant improvement (p < 0.05) from query restructuring alone — most notably "most frequent customers" (mean diff ≈ 0.67s) and "total sales per category" (mean diff ≈ 1.83s).
+**Before indexing** (`benchmarking/project2_stats_results.csv`), 6 of 7 queries showed a statistically significant improvement (p < 0.05) from query restructuring alone, most notably "most frequent customers" (mean diff ≈ 0.67s) and "total sales per category" (mean diff ≈ 1.83s).
 
-**After indexing** (`benchmarking/after_indexing_project2_stats_results.csv`), overall runtimes dropped further, and the picture became more mixed: some queries (e.g. "most frequent customers", "total sales per category") retained large, significant gains, while others (e.g. "highest spending customers", "most frequently bought product pair") showed little or no significant difference — or even a small regression — once indexes did most of the optimization work for both query forms.
+**After indexing** (`benchmarking/after_indexing_project2_stats_results.csv`), overall runtimes dropped further, and the picture became more mixed: some queries (e.g. "most frequent customers", "total sales per category") retained large, significant gains, while others (e.g. "highest spending customers", "most frequently bought product pair") showed little or no significant difference, or even a small regression, once indexes did most of the optimization work for both query forms.
 
 ## Repository Structure
 
@@ -96,7 +96,7 @@ online-marketplace-query-optimization/
 │   └── after_indexing_project2_stats_results.csv
 │
 └── report/
-    └── Ghosh_Rupa_2nd_Project_Report.pdf   (add manually — see note below)
+    └── Ghosh_Rupa_2nd_Project_Report.pdf
 ```
 
 ## How to Run
@@ -109,17 +109,13 @@ online-marketplace-query-optimization/
 
 3. **Apply indexes:**
 
-   ```sql
-   SOURCE sql/indexing.sql;
-   ```
+   SOURCE `sql/indexing.sql`
 
 4. **Re-run benchmarking** to generate the "after indexing" results.
 
 5. **Review execution plans:**
 
-   ```sql
-   SOURCE sql/optimized_queries_explain.sql;
-   ```
+   SOURCE 'sql/optimized_queries_explain.sql'
 
 6. **Explore transactions & concurrency control:**
 

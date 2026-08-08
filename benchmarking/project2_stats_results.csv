@@ -1,0 +1,8 @@
+Query Name,Mean Diff (B - O),95% CI Lower,95% CI Upper,p-value (t-test)
+i want my most frequent customers,0.6721,0.605,0.7391,0
+most popular products/ most sold products,0.12,0.0233,0.2168,0.017681
+highest spending customers,0.1765,0.0853,0.2677,0.000682
+customers placed the most orders in the last 6 months,0.0017,-0.0415,0.0449,0.936459
+most frequently bought product pair,0.3758,0.0803,0.6712,0.015394
+total sales per category,1.833,1.5522,2.1137,0
+total payment per customer,0.1988,0.0249,0.3727,0.027233

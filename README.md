@@ -115,7 +115,7 @@ online-marketplace-query-optimization/
 
 5. **Review execution plans:**
 
-   SOURCE 'sql/optimized_queries_explain.sql'
+   SOURCE `sql/optimized_queries_explain.sql`
 
 6. **Explore transactions & concurrency control:**
 
@@ -123,4 +123,4 @@ online-marketplace-query-optimization/
 
 > **Note:** The notebooks read the MySQL password from the `MYSQL_PASSWORD` environment variable rather than a hardcoded value. Set it before running, e.g. `export MYSQL_PASSWORD=your_password`.
 
-> **Report:** The full write-up (`Ghosh_Rupa_2nd_Project_Report.pdf`) is not yet uploaded to this repo — add it to a `report/` folder via GitHub's "Add file" button.
+> **Report:** The full write-up (`Ghosh_Rupa_2nd_Project_Report.pdf`) is uploaded to the `report/` folder.
